@@ -56,6 +56,7 @@
 
 :root {
   --body-bg: #F2F2F2;
+  --white-bg: #fff;
   --text-color: #111517;
 }
 
@@ -82,6 +83,7 @@ body {
   line-height: 16px;
   background-color: var(--body-bg);
   color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 img {
@@ -89,6 +91,10 @@ img {
   height: auto;
 }
 
+input, select {
+  background-color: var(--white-bg);
+  color: var(--text-color);
+}
 
 /* CONTAINER */
 
@@ -99,6 +105,12 @@ img {
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.dark-mode {
+  --white-bg: #2B3844;
+  --text-color: #fff;
+  --body-bg: #202C36;
 }
 
 
@@ -113,7 +125,7 @@ img {
 
 .site-header {
   padding: 24px 0;
-  background-color: #fff;
+  background-color: var(--white-bg);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -232,7 +244,7 @@ img {
   height: 336px;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: var(--white-bg);
   overflow: hidden;
   box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
   border-radius: 5px;
