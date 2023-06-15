@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('NunitoSans7pt-SemiBold.eot');
+    src: url('NunitoSans7pt-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('NunitoSans7pt-SemiBold.woff2') format('woff2'),
+        url('NunitoSans7pt-SemiBold.woff') format('woff'),
+        url('NunitoSans7pt-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('NunitoSans7pt-Regular.eot');
+    src: url('NunitoSans7pt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('NunitoSans7pt-Regular.woff2') format('woff2'),
+        url('NunitoSans7pt-Regular.woff') format('woff'),
+        url('NunitoSans7pt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('NunitoSans7pt-Light.eot');
+    src: url('NunitoSans7pt-Light.eot?#iefix') format('embedded-opentype'),
+        url('NunitoSans7pt-Light.woff2') format('woff2'),
+        url('NunitoSans7pt-Light.woff') format('woff'),
+        url('NunitoSans7pt-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('NunitoSans7pt-ExtraBold.eot');
+    src: url('NunitoSans7pt-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('NunitoSans7pt-ExtraBold.woff2') format('woff2'),
+        url('NunitoSans7pt-ExtraBold.woff') format('woff'),
+        url('NunitoSans7pt-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
