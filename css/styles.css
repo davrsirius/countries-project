@@ -5,9 +5,9 @@
   font-family: 'Nunito Sans 7pt';
   src: url('../fonts/NunitoSans7pt-SemiBold.eot');
   src: url('../fonts/NunitoSans7pt-SemiBold.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/NunitoSans7pt-SemiBold.woff2') format('woff2'),
-      url('../fonts/NunitoSans7pt-SemiBold.woff') format('woff'),
-      url('../fonts/NunitoSans7pt-SemiBold.ttf') format('truetype');
+    url('../fonts/NunitoSans7pt-SemiBold.woff2') format('woff2'),
+    url('../fonts/NunitoSans7pt-SemiBold.woff') format('woff'),
+    url('../fonts/NunitoSans7pt-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -17,9 +17,9 @@
   font-family: 'Nunito Sans 7pt';
   src: url('../fonts/NunitoSans7pt-Regular.eot');
   src: url('../fonts/NunitoSans7pt-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/NunitoSans7pt-Regular.woff2') format('woff2'),
-      url('../fonts/NunitoSans7pt-Regular.woff') format('woff'),
-      url('../fonts/NunitoSans7pt-Regular.ttf') format('truetype');
+    url('../fonts/NunitoSans7pt-Regular.woff2') format('woff2'),
+    url('../fonts/NunitoSans7pt-Regular.woff') format('woff'),
+    url('../fonts/NunitoSans7pt-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -29,9 +29,9 @@
   font-family: 'Nunito Sans 7pt';
   src: url('../fonts/NunitoSans7pt-Light.eot');
   src: url('../fonts/NunitoSans7pt-Light.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/NunitoSans7pt-Light.woff2') format('woff2'),
-      url('../fonts/NunitoSans7pt-Light.woff') format('woff'),
-      url('../fonts/NunitoSans7pt-Light.ttf') format('truetype');
+    url('../fonts/NunitoSans7pt-Light.woff2') format('woff2'),
+    url('../fonts/NunitoSans7pt-Light.woff') format('woff'),
+    url('../fonts/NunitoSans7pt-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -41,9 +41,9 @@
   font-family: 'Nunito Sans 7pt';
   src: url('../fonts/NunitoSans7pt-ExtraBold.eot');
   src: url('../fonts/NunitoSans7pt-ExtraBold.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/NunitoSans7pt-ExtraBold.woff2') format('woff2'),
-      url('../fonts/NunitoSans7pt-ExtraBold.woff') format('woff'),
-      url('../fonts/NunitoSans7pt-ExtraBold.ttf') format('truetype');
+    url('../fonts/NunitoSans7pt-ExtraBold.woff2') format('woff2'),
+    url('../fonts/NunitoSans7pt-ExtraBold.woff') format('woff'),
+    url('../fonts/NunitoSans7pt-ExtraBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -105,14 +105,90 @@ img {
   flex-grow: 1;
 }
 
+.site-header {
+  padding: 24px 0;
+  background-color: #fff;
+}
+
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header-logo-link {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--text-color);
+}
+
+.site-header-logo-link:hover {
+  opacity: 0.8;
+}
+.site-header-logo-link:active {
+  opacity: 0.6;
+}
+
+.dark-mode-button {
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text-color);
+  background-color: transparent;
+}
+
+.dark-mode-button:hover {
+  opacity: 0.8;
+}
+.dark-mode-button:active {
+  opacity: 0.6;
+}
+
+.button-inner {
+  display: flex;
+  align-items: center;
+}
+
+.button-inner::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/button-new-moon.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-right: 8px;
+}
+
+
+
+/* .dark-mode-button-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+/* */
+.dark-mode-button::before {
+  content: "";
+  background-image: url('../images/button-new-moon.svg');
+  width: 20px;
+  height: 20px;
+  background-position: center center;
+  margin-right: 8px;
+}
+
+*/
 
 /* RETINA BACKGROUNDS */
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
 
 }
