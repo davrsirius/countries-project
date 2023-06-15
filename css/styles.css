@@ -105,9 +105,14 @@ img {
   flex-grow: 1;
 }
 
+
+/* SITE HEADER */
+
+
 .site-header {
   padding: 24px 0;
   background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .site-header-container {
@@ -127,6 +132,7 @@ img {
 .site-header-logo-link:hover {
   opacity: 0.8;
 }
+
 .site-header-logo-link:active {
   opacity: 0.6;
 }
@@ -144,6 +150,7 @@ img {
 .dark-mode-button:hover {
   opacity: 0.8;
 }
+
 .dark-mode-button:active {
   opacity: 0.6;
 }
@@ -164,14 +171,6 @@ img {
   margin-right: 8px;
 }
 
-
-
-/* .dark-mode-button-img {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-/* */
 .dark-mode-button::before {
   content: "";
   background-image: url('../images/button-new-moon.svg');
@@ -181,7 +180,119 @@ img {
   margin-right: 8px;
 }
 
-*/
+/* MAIN CONTENT */
+
+/* FORM  */
+
+.main-content {
+  padding: 48px 0;
+}
+
+.search-and-filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.search-input {
+  width: 480px;
+  padding: 18px 74px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  background-image: url('../images/search-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 2rem center;
+}
+
+.continents-select {
+  width: 200px;
+  padding: 18px 24px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+}
+
+
+/* Countries wrapper */
+
+.countries-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 74px;
+}
+
+.country-card {
+  width: 264px;
+  height: 336px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.country-flag-img {
+  width: 264px;
+  height: 160px;
+  transition: transform 0.5s ease;
+}
+
+.country-card:hover .country-flag-img {
+  transform: scale(1.1);
+}
+.country-card-info {
+  padding: 24px;
+}
+
+.country-card-title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.country-card-info-desc {
+  font-weight: 300;
+}
+
+.country-card-desc-text:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.country-card-desc-text span {
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* RETINA BACKGROUNDS */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -189,6 +300,4 @@ only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {
-
-}
+only screen and (min-resolution: 2dppx) {}
